@@ -1,4 +1,5 @@
-<?php get_header(); ?><!-- index.php -->
+<?php /* Template name: Home Page */
+get_header(); ?><!-- custom-home-page.php -->
     <?php if ( have_posts() ) : ?> 
         <?php while ( have_posts() ) : the_post(); ?>
             <h1><?php the_title(); ?></h1>
