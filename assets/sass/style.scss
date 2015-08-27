@@ -1,19 +1,4 @@
-// Imports
-@import "compass";
-// Root Files
 @import "vars";
-// Base 
-@import "base/normalize";
-// States 
-@import "states/queries";
-// Layouts
-@import "layouts/header";
-@import "layouts/main";
-@import "layouts/footer";
-@import "layouts/nav";
-// Modules
-@import "modules/helpers";
-
 /*!
 Theme Name: #{ $theme_name }
 Theme URI: #{ $theme_uri }
@@ -25,3 +10,15 @@ License: #{ $theme_license }
 License URI: License.txt
 Tags: #{ $theme_tags }
 */
+// Imports
+@import "compass";
+// Base 
+@import "base/normalize";
+// Layouts
+@import "layouts/header";
+@import "layouts/main";
+@import "layouts/footer";
+@import "layouts/nav";
+// Modules
+@import "modules/helpers";
+

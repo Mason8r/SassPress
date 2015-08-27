@@ -6,19 +6,8 @@ add_image_size( 'tiny-thumb', 50, 50 );
 /* Load Scripts */
 function js_and_css()
 {
-	//Get custom script and foundation (after jQuery)
-	wp_register_script( 'my-script', get_template_directory_uri() . '/assets/js/main.js', array( 'jquery' ), false, true  );
-	wp_register_script( 'modernizer', get_template_directory_uri() . '/assets/js/modernizr.js', array( 'jquery' ), false, true  );
-	wp_register_script( 'fastclick', get_template_directory_uri() . '/assets/js/fastclick.js', array( 'jquery' ), false, true  );
-
-	//enqueue the script:
-	wp_enqueue_script( 'modernizer' );
-	wp_enqueue_script( 'fastclick' );
-	wp_enqueue_script( 'my-script' );
-
 	wp_register_style( 'style' , get_stylesheet_uri() );
 	wp_enqueue_style( 'style' );
-
 }
 add_action( 'wp_enqueue_scripts', 'js_and_css' );
 
